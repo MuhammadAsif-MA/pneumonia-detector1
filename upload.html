@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pneumonia Detection App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .disclaimer {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container custom-container">
+        <h2 class="text-center mb-4">Pneumonia Detection Tool</h2>
+        
+        <!-- Disclaimer Banner -->
+        <div class="disclaimer">
+            <strong>Note:</strong> This is just for practice to test my app and model. 
+            <span class="text-danger">Not recommended for practical use.</span>
+        </div>
+
+        <!-- Upload Form -->
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class="form-label">Upload Chest X-Ray:</label>
+                <input type="file" class="form-control" name="file" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Analyze</button>
+        </form>
+    </div>
+</body>
+</html>
